@@ -124,3 +124,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Others
+
+dwm
+.ccls-cache/
+

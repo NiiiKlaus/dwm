@@ -129,4 +129,5 @@ dkms.conf
 
 dwm
 .ccls-cache/
-
+*.rej
+*.orig

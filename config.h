@@ -74,12 +74,21 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *vol_up[]        = { "/home/niklaus/scripts/dwm/vol-up.sh", NULL };
+static const char *vol_down[]      = { "/home/niklaus/scripts/dwm/vol-down.sh", NULL };
+static const char *vol_toggle[]    = { "/home/niklaus/scripts/dwm/vol-toggle.sh", NULL };
+static const char *trayer_toggle[] = { "/home/niklaus/scripts/dwm/t-toggle.sh", NULL };
+
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_Up,     spawn,          {.v = vol_up } },
+	{ MODKEY,                       XK_Down,   spawn,          {.v = vol_down } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = vol_toggle } },
+	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = trayer_toggle } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },

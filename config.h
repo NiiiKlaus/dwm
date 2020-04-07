@@ -74,11 +74,11 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
-static const char *vol_up[]        = { "/home/niklaus/scripts/dwm/vol-up.sh", NULL };
-static const char *vol_down[]      = { "/home/niklaus/scripts/dwm/vol-down.sh", NULL };
-static const char *vol_toggle[]    = { "/home/niklaus/scripts/dwm/vol-toggle.sh", NULL };
-static const char *trayer_toggle[] = { "/home/niklaus/scripts/dwm/t-toggle.sh", NULL };
-static const char *wp_change[]     = { "/home/niklaus/scripts/dwm/wp-change.sh", NULL };
+static const char *vol_up[]        = { "/home/niklaus/scripts/app-specified/dwm/vol-up.sh", NULL };
+static const char *vol_down[]      = { "/home/niklaus/scripts/app-specified/dwm/vol-down.sh", NULL };
+static const char *vol_toggle[]    = { "/home/niklaus/scripts/app-specified/dwm/vol-toggle.sh", NULL };
+static const char *trayer_toggle[] = { "/home/niklaus/scripts/app-specified/dwm/t-toggle.sh", NULL };
+static const char *wp_change[]     = { "/home/niklaus/scripts/app-specified/dwm/wp-change.sh", NULL };
 
 
 static Key keys[] = {

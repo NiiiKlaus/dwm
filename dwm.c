@@ -1596,7 +1596,7 @@ void
 runAutostart(void) {
 //	system("cd ~/.dwm; ./autostart_blocking.sh");
 //	system("cd ~/.dwm; ./autostart.sh &");
-    system("cd ~/scripts/dwm; ./autostart.sh &");
+    system("cd /home/niklaus/scripts/app-specified/dwm; ./autostart.sh &");
 }
 
 void
